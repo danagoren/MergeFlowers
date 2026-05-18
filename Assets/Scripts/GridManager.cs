@@ -5,27 +5,31 @@ public class GridManager : MonoBehaviour
 {
     public static GridManager Instance { get; private set; }
 
-    public int rows = 5;
+    public int rows = 3;
     public int columns = 5;
-    public float cellSize = 1.0f;
+    public float cellSize = 2.5f;
 
-    private MergeItem[,] grid;
+    private GameObject[,] slots;
 
     private void Awake()
     {
         Instance = this;
-        grid = new MergeItem[columns, rows];
+        slots = new GameObject[columns, rows];
     }
 
     public Vector2 GetCellPosition(int x, int y)
     {
-        return new Vector2(x * cellSize, y * cellSize);
+        float offsetX = (columns - 1) / 2f;
+        float offsetY = (rows - 1) / 2f;
+        return new Vector2((x - offsetX) * cellSize, (y - offsetY) * cellSize);
     }
 
     public (int x, int y) GetCellFromPosition(Vector2 worldPos)
     {
-        int x = Mathf.RoundToInt(worldPos.x / cellSize);
-        int y = Mathf.RoundToInt(worldPos.y / cellSize);
+        float offsetX = (columns - 1) / 2f;
+        float offsetY = (rows - 1) / 2f;
+        int x = Mathf.RoundToInt(worldPos.x / cellSize + offsetX);
+        int y = Mathf.RoundToInt(worldPos.y / cellSize + offsetY);
         return (x, y);
     }
 
@@ -34,28 +38,39 @@ public class GridManager : MonoBehaviour
         return x >= 0 && x < columns && y >= 0 && y < rows;
     }
 
-    public bool IsCellOccupied(int x, int y)
+    public bool IsCellEmpty(int x, int y)
     {
         if (!IsValidCell(x, y)) return false;
-        return grid[x, y] != null;
+        return slots[x, y] == null;
     }
 
-    public void PlaceItem(MergeItem item, int x, int y)
+    public (int x, int y)? FindRandomEmptySlot()
+    {
+        var empty = new List<(int x, int y)>();
+        for (int x = 0; x < columns; x++)
+            for (int y = 0; y < rows; y++)
+                if (slots[x, y] == null)
+                    empty.Add((x, y));
+
+        if (empty.Count == 0) return null;
+        return empty[Random.Range(0, empty.Count)];
+    }
+
+    public void PlaceItem(GameObject item, int x, int y)
     {
         if (!IsValidCell(x, y)) return;
-        grid[x, y] = item;
-        item.SetGridPosition(x, y);
+        slots[x, y] = item;
     }
 
     public void RemoveItem(int x, int y)
     {
         if (!IsValidCell(x, y)) return;
-        grid[x, y] = null;
+        slots[x, y] = null;
     }
 
-    public MergeItem GetItemAt(int x, int y)
+    public GameObject GetItemAt(int x, int y)
     {
         if (!IsValidCell(x, y)) return null;
-        return grid[x, y];
+        return slots[x, y];
     }
 }
