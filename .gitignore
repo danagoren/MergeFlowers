@@ -4,3 +4,15 @@ Build/
 Builds/
 Logs/
 UserSettings/
+
+# macOS
+.DS_Store
+
+# Visual Studio / Rider
+.vs/
+.idea/
+*.csproj
+*.sln
+
+# Unity generated
+MemoryCaptures/
