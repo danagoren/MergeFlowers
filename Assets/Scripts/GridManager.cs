@@ -21,7 +21,7 @@ public class GridManager : MonoBehaviour
     {
         float offsetX = (columns - 1) / 2f;
         float offsetY = (rows - 1) / 2f;
-        return new Vector2((x - offsetX) * cellSize, (y - offsetY) * cellSize);
+        return new Vector2((x - offsetX) * cellSize, (y - offsetY) * cellSize - 0.5f);
     }
 
     public (int x, int y) GetCellFromPosition(Vector2 worldPos)
