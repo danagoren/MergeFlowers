@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c7256efe20ff3436c9562c8d7850a47b
+guid: 7a40b336c64f14466850ee773be635fd
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -46,14 +46,14 @@ TextureImporter:
   spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
-  alignment: 0
-  spritePivot: {x: 0.5, y: 0.5}
+  alignment: 9
+  spritePivot: {x: 0.23805271, y: 0.5324728}
   spritePixelsToUnits: 100
-  spriteBorder: {x: 0, y: 0, z: 593, w: 0}
+  spriteBorder: {x: 0, y: 152, z: 710, w: 36}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
   alphaIsTransparency: 1
-  spriteTessellationDetail: -1
+  spriteTessellationDetail: 0
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: SpawnButton_0
+      name: Button_Clicked
       rect:
         serializedVersion: 2
-        x: 38
-        y: 309
-        width: 700
-        height: 715
+        x: 0
+        y: 49
+        width: 853
+        height: 975
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,20 +111,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: dd32f995daa0c4a40b55d9fd34a4b121
-      internalID: -1316396953
+      spriteID: bdca134b603924c61b0c4956dd155648
+      internalID: -585339207
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: SpawnButton_1
+      name: Button_Idle
       rect:
         serializedVersion: 2
-        x: 788
-        y: 318
-        width: 702
-        height: 706
+        x: 871
+        y: 198
+        width: 665
+        height: 672
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: a2e704be9dafe4e70a6ac1ed396acb15
-      internalID: -1150777344
+      spriteID: fffa2137d498340b0810fcd4641b855c
+      internalID: -2068585944
       vertices: []
       indices: 
       edges: []
@@ -149,8 +149,8 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      SpawnButton_0: -1316396953
-      SpawnButton_1: -1150777344
+      Button_Clicked: -585339207
+      Button_Idle: -2068585944
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

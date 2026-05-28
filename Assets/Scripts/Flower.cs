@@ -40,7 +40,7 @@ public class Flower : MonoBehaviour
         if (hit.collider != null)
         {
             Flower other = hit.collider.GetComponent<Flower>();
-            if (other != null && other != this && other.tier == tier)
+            if (other != null && other != this && other.tier == tier && tier + 1 < Spawner.Instance.flowerPrefabs.Length)
             {
                 MergeFlowers(other);
                 return;

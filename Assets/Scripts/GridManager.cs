@@ -6,8 +6,10 @@ public class GridManager : MonoBehaviour
     public static GridManager Instance { get; private set; }
 
     public int rows = 3;
-    public int columns = 5;
+    public int columns = 10;
     public float cellSize = 2.5f;
+    public int originalColumns = 5;
+    public Vector2 gridOffset = new Vector2(2, 0);
 
     private GameObject[,] slots;
 
@@ -19,18 +21,32 @@ public class GridManager : MonoBehaviour
 
     public Vector2 GetCellPosition(int x, int y)
     {
-        float offsetX = (columns - 1) / 2f;
+        float offsetX = (originalColumns - 1) / 2f;
         float offsetY = (rows - 1) / 2f;
-        return new Vector2((x - offsetX) * cellSize, (y - offsetY) * cellSize - 0.5f);
+        Vector2 pos = new Vector2((x - offsetX) * cellSize, (y - offsetY) * cellSize - 0.5f);
+        if (x >= originalColumns)
+            pos += gridOffset;
+        return pos;
     }
 
     public (int x, int y) GetCellFromPosition(Vector2 worldPos)
     {
-        float offsetX = (columns - 1) / 2f;
-        float offsetY = (rows - 1) / 2f;
-        int x = Mathf.RoundToInt(worldPos.x / cellSize + offsetX);
-        int y = Mathf.RoundToInt(worldPos.y / cellSize + offsetY);
-        return (x, y);
+        int bestX = 0, bestY = 0;
+        float bestDist = float.MaxValue;
+        for (int y = 0; y < rows; y++)
+        {
+            for (int x = 0; x < columns; x++)
+            {
+                float dist = Vector2.Distance(worldPos, GetCellPosition(x, y));
+                if (dist < bestDist)
+                {
+                    bestDist = dist;
+                    bestX = x;
+                    bestY = y;
+                }
+            }
+        }
+        return (bestX, bestY);
     }
 
     public bool IsValidCell(int x, int y)

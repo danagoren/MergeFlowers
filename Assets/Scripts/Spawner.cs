@@ -6,6 +6,10 @@ public class Spawner : MonoBehaviour
     public static Spawner Instance { get; private set; }
 
     public GameObject[] flowerPrefabs;
+    public Sprite buttonIdleSprite;
+    public Sprite buttonClickedSprite;
+
+    private Image _buttonImage;
 
     private void Awake()
     {
@@ -19,8 +23,30 @@ public class Spawner : MonoBehaviour
         {
             var btn = btnGO.GetComponent<Button>();
             if (btn != null)
+            {
                 btn.onClick.AddListener(SpawnPinkFlower);
+                btn.onClick.AddListener(OnButtonClick);
+            }
+
+            _buttonImage = btnGO.GetComponent<Image>();
         }
+    }
+
+    private void OnButtonClick()
+    {
+        if (_buttonImage == null || buttonClickedSprite == null) return;
+        StartCoroutine(SwapSpriteTemporary());
+    }
+
+    private System.Collections.IEnumerator SwapSpriteTemporary()
+    {
+        var original = _buttonImage.sprite;
+        _buttonImage.sprite = buttonClickedSprite;
+        yield return new WaitForSeconds(1f);
+        if (buttonIdleSprite != null)
+            _buttonImage.sprite = buttonIdleSprite;
+        else
+            _buttonImage.sprite = original;
     }
 
     public void SpawnPinkFlower()
