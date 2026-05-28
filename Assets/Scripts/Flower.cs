@@ -3,11 +3,33 @@ using UnityEngine;
 public class Flower : MonoBehaviour
 {
     public int tier;
+    public float slotVerticalOffset;
+    public Sprite[] spawnAnimationSprites;
+    public float animFrameDuration = 0.1f;
 
     private Vector3 offset;
     private Vector3 originalPos;
     private int slotX;
     private int slotY;
+
+    private void Start()
+    {
+        if (tier == 0 && spawnAnimationSprites.Length > 0)
+            StartCoroutine(PlaySpawnAnimation());
+    }
+
+    private System.Collections.IEnumerator PlaySpawnAnimation()
+    {
+        var sr = GetComponent<SpriteRenderer>();
+        var original = sr.sprite;
+        foreach (var s in spawnAnimationSprites)
+        {
+            sr.sprite = s;
+            yield return new WaitForSeconds(animFrameDuration);
+        }
+        sr.sprite = original;
+    }
+
     private void OnMouseDown()
     {
         Vector3 mouseWorld = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -60,6 +82,7 @@ public class Flower : MonoBehaviour
 
         GameObject nextPrefab = Spawner.Instance.flowerPrefabs[tier + 1];
         Vector3 pos = GridManager.Instance.GetCellPosition(targetCell.x, targetCell.y);
+        pos.y += nextPrefab.GetComponent<Flower>().slotVerticalOffset;
         GameObject newFlower = Instantiate(nextPrefab, new Vector3(pos.x, pos.y, 0), Quaternion.identity);
         newFlower.name = $"Flower_{targetCell.x}_{targetCell.y}";
 

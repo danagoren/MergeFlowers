@@ -60,6 +60,7 @@ public class Spawner : MonoBehaviour
 
         var (x, y) = slot.Value;
         Vector2 pos = GridManager.Instance.GetCellPosition(x, y);
+        pos.y += flowerPrefabs[0].GetComponent<Flower>().slotVerticalOffset;
 
         GameObject flower = Instantiate(flowerPrefabs[0], new Vector3(pos.x, pos.y, 0), Quaternion.identity);
         flower.name = $"Flower_{x}_{y}";
