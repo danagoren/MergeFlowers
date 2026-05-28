@@ -12,14 +12,45 @@ public class GridManager : MonoBehaviour
     public Vector2 gridOffset = new Vector2(2, 0);
 
     private GameObject[,] slots;
+    private Vector2[,] slotPositions;
 
     private void Awake()
     {
         Instance = this;
         slots = new GameObject[columns, rows];
+        slotPositions = new Vector2[columns, rows];
+
+        for (int x = 0; x < columns; x++)
+            for (int y = 0; y < rows; y++)
+                slotPositions[x, y] = ComputeCellPosition(x, y);
+
+        var parent = GameObject.Find("GridSlots");
+        if (parent != null)
+        {
+            foreach (Transform child in parent.transform)
+            {
+                string name = child.name;
+                if (name.StartsWith("Slot") && int.TryParse(name.Substring(4), out int index))
+                {
+                    int localIndex = index % 15;
+                    int gx = localIndex % originalColumns;
+                    int gy = localIndex / originalColumns;
+                    if (index >= 15) gx += originalColumns;
+                    if (gx < columns && gy < rows)
+                        slotPositions[gx, gy] = child.position;
+                }
+            }
+        }
     }
 
     public Vector2 GetCellPosition(int x, int y)
+    {
+        if (x >= 0 && x < columns && y >= 0 && y < rows)
+            return slotPositions[x, y];
+        return ComputeCellPosition(x, y);
+    }
+
+    private Vector2 ComputeCellPosition(int x, int y)
     {
         float offsetX = (originalColumns - 1) / 2f;
         float offsetY = (rows - 1) / 2f;
