@@ -6,10 +6,8 @@ public class Spawner : MonoBehaviour
     public static Spawner Instance { get; private set; }
 
     public GameObject[] flowerPrefabs;
-    public Sprite buttonIdleSprite;
-    public Sprite buttonClickedSprite;
-
-    private Image _buttonImage;
+    public int mergeCount;
+    private Text _counterText;
 
     private void Awake()
     {
@@ -23,30 +21,21 @@ public class Spawner : MonoBehaviour
         {
             var btn = btnGO.GetComponent<Button>();
             if (btn != null)
-            {
                 btn.onClick.AddListener(SpawnPinkFlower);
-                btn.onClick.AddListener(OnButtonClick);
-            }
 
-            _buttonImage = btnGO.GetComponent<Image>();
+            _counterText = GameObject.Find("MergeCounter")?.GetComponent<Text>();
+            if (_counterText != null)
+            {
+                _counterText.font = Resources.GetBuiltinResource<Font>("LegacyRuntime.ttf");
+                _counterText.text = "0";
+            }
         }
     }
 
-    private void OnButtonClick()
+    public void IncrementMergeCount()
     {
-        if (_buttonImage == null || buttonClickedSprite == null) return;
-        StartCoroutine(SwapSpriteTemporary());
-    }
-
-    private System.Collections.IEnumerator SwapSpriteTemporary()
-    {
-        var original = _buttonImage.sprite;
-        _buttonImage.sprite = buttonClickedSprite;
-        yield return new WaitForSeconds(1f);
-        if (buttonIdleSprite != null)
-            _buttonImage.sprite = buttonIdleSprite;
-        else
-            _buttonImage.sprite = original;
+        mergeCount++;
+        _counterText.text = mergeCount.ToString();
     }
 
     public void SpawnPinkFlower()

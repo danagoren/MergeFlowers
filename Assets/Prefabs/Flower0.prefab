@@ -150,4 +150,4 @@ MonoBehaviour:
   - {fileID: 485128058, guid: 8298b8ad082e647f994f51193a5c00ba, type: 3}
   - {fileID: 1402911878, guid: 8298b8ad082e647f994f51193a5c00ba, type: 3}
   - {fileID: -728631096, guid: 8298b8ad082e647f994f51193a5c00ba, type: 3}
-  animFrameDuration: 0.1
+  animFrameDuration: 0.13

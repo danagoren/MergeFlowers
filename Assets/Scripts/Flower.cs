@@ -87,6 +87,7 @@ public class Flower : MonoBehaviour
         newFlower.name = $"Flower_{targetCell.x}_{targetCell.y}";
 
         GridManager.Instance.PlaceItem(newFlower, targetCell.x, targetCell.y);
+        Spawner.Instance.IncrementMergeCount();
     }
 
     private void SnapBack()
