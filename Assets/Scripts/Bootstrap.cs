@@ -10,6 +10,7 @@ public class Bootstrap : MonoBehaviour
     public ISaveSystem SaveSystem { get; private set; }
 
     [SerializeField] private Text _counterText;
+    [SerializeField] private Text _highScoreText;
 
     private void Awake()
     {
@@ -32,11 +33,19 @@ public class Bootstrap : MonoBehaviour
             if (_counterText == null)
                 Debug.LogError("Bootstrap: Could not find 'CurrentScore' Text");
         }
+        if (_highScoreText == null)
+        {
+            _highScoreText = GameObject.Find("HighScore")?.GetComponent<Text>();
+            if (_highScoreText == null)
+                Debug.LogError("Bootstrap: Could not find 'HighScore' Text");
+        }
     }
 
     private void Update()
     {
         if (_counterText != null)
             _counterText.text = ScoreManager.CurrentScore.ToString();
+        if (_highScoreText != null)
+            _highScoreText.text = ScoreManager.HighScore.ToString();
     }
 }
