@@ -69,6 +69,18 @@ public class Flower : MonoBehaviour
             }
         }
 
+        var cell = GridManager.Instance.GetCellFromPosition(transform.position);
+        if (GridManager.Instance.IsCellEmpty(cell.x, cell.y))
+        {
+            Vector2 pos = GridManager.Instance.GetCellPosition(cell.x, cell.y);
+            pos.y += slotVerticalOffset;
+            transform.position = new Vector3(pos.x, pos.y, 0);
+            slotX = cell.x;
+            slotY = cell.y;
+            GridManager.Instance.PlaceItem(gameObject, slotX, slotY);
+            return;
+        }
+
         SnapBack();
     }
 

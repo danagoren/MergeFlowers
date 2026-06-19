@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.UI;
 
 public class Spawner : MonoBehaviour
 {
@@ -13,20 +12,9 @@ public class Spawner : MonoBehaviour
         Instance = this;
     }
 
-    private void Start()
+    public void SpawnPinkFlower(Vector2 worldPos)
     {
-        var btnGO = GameObject.Find("SpawnButton");
-        if (btnGO != null)
-        {
-            var btn = btnGO.GetComponent<Button>();
-            if (btn != null)
-                btn.onClick.AddListener(SpawnPinkFlower);
-        }
-    }
-
-    public void SpawnPinkFlower()
-    {
-        var slot = GridManager.Instance.FindRandomEmptySlot();
+        var slot = GridManager.Instance.FindClosestEmptySlot(worldPos);
         if (slot == null)
         {
             Debug.Log("All slots are full!");

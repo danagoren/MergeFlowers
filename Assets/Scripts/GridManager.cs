@@ -91,6 +91,24 @@ public class GridManager : MonoBehaviour
         return slots[x, y] == null;
     }
 
+    public (int x, int y)? FindClosestEmptySlot(Vector2 worldPos)
+    {
+        (int x, int y)? best = null;
+        float bestDist = float.MaxValue;
+        for (int x = 0; x < columns; x++)
+            for (int y = 0; y < rows; y++)
+            {
+                if (slots[x, y] != null) continue;
+                float dist = Vector2.Distance(worldPos, slotPositions[x, y]);
+                if (dist < bestDist)
+                {
+                    bestDist = dist;
+                    best = (x, y);
+                }
+            }
+        return best;
+    }
+
     public (int x, int y)? FindRandomEmptySlot()
     {
         var empty = new List<(int x, int y)>();

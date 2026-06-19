@@ -14,7 +14,7 @@ public class FloatingPetal : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Spawner.Instance.SpawnPinkFlower();
+        Spawner.Instance.SpawnPinkFlower(transform.position);
         FloatingPetalPool.Instance.Release(gameObject);
     }
 }
