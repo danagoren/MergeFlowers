@@ -1,0 +1,538 @@
+fileFormatVersion: 2
+guid: b75267b0152be46d983645eb40250d2a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -6950486346419376927
+    second: Untitled_Artwork 3_0
+  - first:
+      213: 3625534343852238118
+    second: Untitled_Artwork 3_1
+  - first:
+      213: 1282242758028340824
+    second: Untitled_Artwork 3_2
+  - first:
+      213: 1545722980852627854
+    second: Untitled_Artwork 3_3
+  - first:
+      213: 6985398862838657233
+    second: Untitled_Artwork 3_4
+  - first:
+      213: -501210333570360995
+    second: Untitled_Artwork 3_5
+  - first:
+      213: 4956728875595141976
+    second: Untitled_Artwork 3_6
+  - first:
+      213: 5164604369127941486
+    second: Untitled_Artwork 3_7
+  - first:
+      213: -2300981415613331774
+    second: Untitled_Artwork 3_8
+  - first:
+      213: -5529526668461300002
+    second: Untitled_Artwork 3_9
+  - first:
+      213: 1762178798162399000
+    second: Untitled_Artwork 3_10
+  - first:
+      213: -8201054981467594492
+    second: Untitled_Artwork 3_11
+  - first:
+      213: 8110783482465152752
+    second: Untitled_Artwork 3_12
+  - first:
+      213: -2147304607712438316
+    second: Untitled_Artwork 3_13
+  - first:
+      213: -7929007029059137431
+    second: Untitled_Artwork 3_14
+  - first:
+      213: 6484153136457265556
+    second: Untitled_Artwork 3_15
+  - first:
+      213: 7922088692562199574
+    second: Untitled_Artwork 3_16
+  - first:
+      213: 2100256607308316317
+    second: Untitled_Artwork 3_17
+  - first:
+      213: 7403781223284963901
+    second: Untitled_Artwork 3_18
+  - first:
+      213: 7437076812699762264
+    second: Untitled_Artwork 3_19
+  - first:
+      213: -726777960584058110
+    second: Untitled_Artwork 3_20
+  - first:
+      213: 3626399686454200680
+    second: Untitled_Artwork 3_21
+  - first:
+      213: -3170879391310393970
+    second: Untitled_Artwork 3_22
+  - first:
+      213: 8439645987882999984
+    second: Untitled_Artwork 3_23
+  - first:
+      213: -7996876444554088160
+    second: Untitled_Artwork 3_24
+  - first:
+      213: 4083174037834530112
+    second: Untitled_Artwork 3_25
+  - first:
+      213: -1662845309864943299
+    second: Untitled_Artwork 3_26
+  - first:
+      213: 5520733920578342444
+    second: Untitled_Artwork 3_27
+  - first:
+      213: -4683947756810967469
+    second: Untitled_Artwork 3_28
+  - first:
+      213: -7576460476648632474
+    second: Untitled_Artwork 3_29
+  - first:
+      213: 5933145265185761171
+    second: Untitled_Artwork 3_30
+  - first:
+      213: 2588484954743042487
+    second: Untitled_Artwork 3_31
+  - first:
+      213: 5332695242526073193
+    second: Untitled_Artwork 3_32
+  - first:
+      213: 464273234173354715
+    second: Untitled_Artwork 3_33
+  - first:
+      213: 2182405268019295449
+    second: Untitled_Artwork 3_34
+  - first:
+      213: 297461281822278655
+    second: Untitled_Artwork 3_35
+  - first:
+      213: -5558257717072400472
+    second: Untitled_Artwork 3_36
+  - first:
+      213: -7664855920960480618
+    second: Untitled_Artwork 3_37
+  - first:
+      213: -6379507526775577264
+    second: Untitled_Artwork 3_38
+  - first:
+      213: -6441337953827561834
+    second: Untitled_Artwork 3_39
+  - first:
+      213: -3062314962978838104
+    second: Untitled_Artwork 3_40
+  - first:
+      213: -3410607111434869503
+    second: Untitled_Artwork 3_41
+  - first:
+      213: 8615228598099743443
+    second: Untitled_Artwork 3_42
+  - first:
+      213: 8064710271065725139
+    second: Untitled_Artwork 3_43
+  - first:
+      213: -7823922950296561651
+    second: Untitled_Artwork 3_44
+  - first:
+      213: -682716267540565113
+    second: Untitled_Artwork 3_45
+  - first:
+      213: -9044490784486106754
+    second: Untitled_Artwork 3_46
+  - first:
+      213: 5164068832498709461
+    second: Untitled_Artwork 3_47
+  - first:
+      213: 2766001977709178470
+    second: Untitled_Artwork 3_48
+  - first:
+      213: -1768027019411077324
+    second: Untitled_Artwork 3_49
+  - first:
+      213: 4142386477729307744
+    second: Untitled_Artwork 3_50
+  - first:
+      213: -1791336437144396714
+    second: Untitled_Artwork 3_51
+  - first:
+      213: -7172956143523388096
+    second: Untitled_Artwork 3_52
+  - first:
+      213: 4826831285730318184
+    second: Untitled_Artwork 3_53
+  - first:
+      213: -1761832995642378079
+    second: Untitled_Artwork 3_54
+  - first:
+      213: -1539646288919141707
+    second: Untitled_Artwork 3_55
+  - first:
+      213: -2575477995186442709
+    second: Untitled_Artwork 3_56
+  - first:
+      213: -7813594156654903677
+    second: Untitled_Artwork 3_57
+  - first:
+      213: 6098042900106769368
+    second: Untitled_Artwork 3_58
+  - first:
+      213: -7311883295357913500
+    second: Untitled_Artwork 3_59
+  - first:
+      213: 3217214739469487041
+    second: Untitled_Artwork 3_60
+  - first:
+      213: 6518732050093700742
+    second: Untitled_Artwork 3_61
+  - first:
+      213: -3528978243879910011
+    second: Untitled_Artwork 3_62
+  - first:
+      213: -1688687360567874133
+    second: Untitled_Artwork 3_63
+  - first:
+      213: -8963495179592466617
+    second: Untitled_Artwork 3_64
+  - first:
+      213: 4756601767595101536
+    second: Untitled_Artwork 3_65
+  - first:
+      213: -8991348157378195745
+    second: Untitled_Artwork 3_66
+  - first:
+      213: 9160892140584970950
+    second: Untitled_Artwork 3_67
+  - first:
+      213: 7600918206734673864
+    second: Untitled_Artwork 3_68
+  - first:
+      213: -9069353520955828120
+    second: Untitled_Artwork 3_69
+  - first:
+      213: -2598846677475485722
+    second: Untitled_Artwork 3_70
+  - first:
+      213: 884989748614658336
+    second: Untitled_Artwork 3_71
+  - first:
+      213: 8658938637481798388
+    second: Untitled_Artwork 3_72
+  - first:
+      213: -8856026825826981567
+    second: Untitled_Artwork 3_73
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 1
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 4
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 4
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: SakuraChristmas_0
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 1707
+        width: 1028
+        height: 555
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfdb5f37a4c634017a54e0232c88f2c9
+      internalID: -2030226148
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_1
+      rect:
+        serializedVersion: 2
+        x: 1403
+        y: 1694
+        width: 798
+        height: 774
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8df9eec653c784413be136d7bb8184ee
+      internalID: 669715241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_2
+      rect:
+        serializedVersion: 2
+        x: 2686
+        y: 1643
+        width: 683
+        height: 915
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba4c2899436554221b89c7c477f5aee7
+      internalID: -1034783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_3
+      rect:
+        serializedVersion: 2
+        x: 3909
+        y: 1628
+        width: 810
+        height: 958
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 712422b622c1f4262a7cb7790da6c980
+      internalID: 2105700795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_4
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 143
+        width: 887
+        height: 1150
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 144fa43b4c19a495a8d2309940afeab3
+      internalID: -731935241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_5
+      rect:
+        serializedVersion: 2
+        x: 1329
+        y: 148
+        width: 921
+        height: 1293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1b5e879ab59459889481689065cf06
+      internalID: -1572484048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_6
+      rect:
+        serializedVersion: 2
+        x: 2549
+        y: 198
+        width: 975
+        height: 1208
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5c06badb45a4410e8eb4e4c04237268
+      internalID: -1540199042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: SakuraChristmas_7
+      rect:
+        serializedVersion: 2
+        x: 3764
+        y: 190
+        width: 1165
+        height: 1263
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30c56ffa2bd994246a11d8507f4f6107
+      internalID: -145155652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    customData: 
+    physicsShape: []
+    bones: []
+    spriteID: a854fd9946bbb4247bd055a0ce1a05ee
+    internalID: -112182871
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    spriteCustomMetadata:
+      entries:
+      - key: SpriteEditor.SliceSettings
+        value: '{"sliceOnImport":false,"gridCellCount":{"x":1.0,"y":1.0},"gridSpriteSize":{"x":5221.0,"y":2671.0},"gridSpriteOffset":{"x":0.0,"y":0.0},"gridSpritePadding":{"x":0.0,"y":0.0},"pivot":{"x":0.5,"y":0.5},"pivotPixels":{"x":0.0,"y":0.0},"autoSlicingMethod":0,"spriteAlignment":0,"pivotUnitMode":0,"slicingType":2,"keepEmptyRects":false,"isAlternate":false}'
+    nameFileIdTable:
+      SakuraChristmas_0: -2030226148
+      SakuraChristmas_1: 669715241
+      SakuraChristmas_2: -1034783
+      SakuraChristmas_3: 2105700795
+      SakuraChristmas_4: -731935241
+      SakuraChristmas_5: -1572484048
+      SakuraChristmas_6: -1540199042
+      SakuraChristmas_7: -145155652
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
