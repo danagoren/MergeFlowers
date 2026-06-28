@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: F05F21DA-F598-4E9E-A400-E2FD29F336FC_0
+      name: FloatingPetal
       rect:
         serializedVersion: 2
         x: 19
@@ -121,7 +121,7 @@ TextureImporter:
         width: 949
         height: 756
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 7e0e676ccce904be1a51d6bfc1dfa166
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      F05F21DA-F598-4E9E-A400-E2FD29F336FC_0: -7168107955202781842
+      FloatingPetal: -7168107955202781842
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

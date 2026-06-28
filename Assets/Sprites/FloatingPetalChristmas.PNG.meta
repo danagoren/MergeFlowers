@@ -113,7 +113,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: 0AB33318-E9AA-4508-9815-6DA14DBE2DE1_0
+      name: FloatingPetalChristmas
       rect:
         serializedVersion: 2
         x: 19
@@ -121,7 +121,7 @@ TextureImporter:
         width: 948
         height: 761
       alignment: 0
-      pivot: {x: 0, y: 0}
+      pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
@@ -138,7 +138,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 2886992cc1bf24f88bf7e32b0f59d771
     internalID: 0
     vertices: []
     indices: 
@@ -148,7 +148,7 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      0AB33318-E9AA-4508-9815-6DA14DBE2DE1_0: -1646277299433242171
+      FloatingPetalChristmas: -1646277299433242171
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

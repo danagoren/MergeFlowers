@@ -223,7 +223,7 @@ GameObject:
   - component: {fileID: 230111311}
   - component: {fileID: 230111310}
   m_Layer: 0
-  m_Name: SpawnButton
+  m_Name: ThemeButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -246,7 +246,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
   m_AnchoredPosition: {x: 111.3, y: -87.5}
-  m_SizeDelta: {x: 200, y: 200}
+  m_SizeDelta: {x: 160, y: 160}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &230111310
 MonoBehaviour:
@@ -291,7 +291,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 230111311}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1005614938}
+        m_TargetAssemblyTypeName: ThemeManager, Assembly-CSharp
+        m_MethodName: ToggleTheme
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &230111311
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2952,6 +2964,7 @@ GameObject:
   - component: {fileID: 1005614933}
   - component: {fileID: 1005614936}
   - component: {fileID: 1005614937}
+  - component: {fileID: 1005614938}
   m_Layer: 0
   m_Name: GameManager
   m_TagString: Untagged
@@ -2971,7 +2984,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ea9196a7df480471bb332caf34cbb11d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  flowerPrefabs:
+  sakuraPrefabs:
   - {fileID: 8385451485077381604, guid: beef05ca4079c49388b63347dc7c0581, type: 3}
   - {fileID: 3306180739520693847, guid: b634696da5b134770a5351331628e545, type: 3}
   - {fileID: 1226248631665477462, guid: aad868e0362c7476ea95b15ebd6b25d6, type: 3}
@@ -3041,6 +3054,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   prefab: {fileID: 1977113001, guid: bdea4325139274c18903684521a28c9a, type: 3}
   defaultCapacity: 15
+--- !u!114 &1005614938
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1005614932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: adb744fb7c4949778194c920d1227c82, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _background: {fileID: 1410693962}
+  _floatingPetal: {fileID: 1977113001, guid: bdea4325139274c18903684521a28c9a, type: 3}
+  _spawner: {fileID: 1005614933}
 --- !u!1 &1410693961
 GameObject:
   m_ObjectHideFlags: 0

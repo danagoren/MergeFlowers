@@ -4,7 +4,7 @@ public class Spawner : MonoBehaviour
 {
     public static Spawner Instance { get; private set; }
 
-    public GameObject[] flowerPrefabs;
+    public GameObject[] sakuraPrefabs;
     public ScoreManager ScoreManager { get; set; }
 
     private void Awake()
@@ -12,7 +12,7 @@ public class Spawner : MonoBehaviour
         Instance = this;
     }
 
-    public void SpawnPinkFlower(Vector2 worldPos)
+    public void SpawnPinkSakura(Vector2 worldPos)
     {
         var slot = GridManager.Instance.FindClosestEmptySlot(worldPos);
         if (slot == null)
@@ -23,11 +23,11 @@ public class Spawner : MonoBehaviour
 
         var (x, y) = slot.Value;
         Vector2 pos = GridManager.Instance.GetCellPosition(x, y);
-        pos.y += flowerPrefabs[0].GetComponent<Flower>().slotVerticalOffset;
+        pos.y += sakuraPrefabs[0].GetComponent<Sakura>().slotVerticalOffset;
 
-        GameObject flower = Instantiate(flowerPrefabs[0], new Vector3(pos.x, pos.y, 0), Quaternion.identity);
-        flower.name = $"Flower_{x}_{y}";
+        GameObject sakura = Instantiate(sakuraPrefabs[0], new Vector3(pos.x, pos.y, 0), Quaternion.identity);
+        sakura.name = $"Sakura_{x}_{y}";
 
-        GridManager.Instance.PlaceItem(flower, x, y);
+        GridManager.Instance.PlaceItem(sakura, x, y);
     }
 }

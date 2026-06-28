@@ -4,6 +4,12 @@ public class FloatingPetal : MonoBehaviour
 {
     public float speed = 1f;
 
+    private void OnEnable()
+    {
+        if (ThemeManager.Instance != null && ThemeManager.Instance.CurrentFloatingPetalSprite != null)
+            GetComponent<SpriteRenderer>().sprite = ThemeManager.Instance.CurrentFloatingPetalSprite;
+    }
+
     private void Update()
     {
         transform.position += Vector3.right * speed * Time.deltaTime;
@@ -14,7 +20,7 @@ public class FloatingPetal : MonoBehaviour
 
     private void OnMouseDown()
     {
-        Spawner.Instance.SpawnPinkFlower(transform.position);
+        Spawner.Instance.SpawnPinkSakura(transform.position);
         FloatingPetalPool.Instance.Release(gameObject);
     }
 }

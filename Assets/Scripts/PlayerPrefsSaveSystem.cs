@@ -2,7 +2,7 @@ using UnityEngine;
 
 public class PlayerPrefsSaveSystem : MonoBehaviour, ISaveSystem
 {
-    private const string SaveKey = "MergeFlowers_SaveData";
+    private const string SaveKey = "MergeSakura_SaveData";
     public static ISaveSystem Instance { get; private set; }
 
     private void Awake()
