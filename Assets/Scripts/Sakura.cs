@@ -14,9 +14,6 @@ public class Sakura : MonoBehaviour
 
     private void Start()
     {
-        if (ThemeManager.Instance?.CurrentSakuraSprites != null && tier >= 0 && tier < ThemeManager.Instance.CurrentSakuraSprites.Length)
-            GetComponent<SpriteRenderer>().sprite = ThemeManager.Instance.CurrentSakuraSprites[tier];
-
         if (tier == 0 && spawnAnimationSprites.Length > 0)
             StartCoroutine(PlaySpawnAnimation());
     }
@@ -25,12 +22,18 @@ public class Sakura : MonoBehaviour
     {
         var sr = GetComponent<SpriteRenderer>();
         var original = sr.sprite;
+        var originalScale = transform.localScale;
+        var originalPos = transform.position;
+        transform.localScale = new Vector3(0.22f, 0.22f, 1f);
+        transform.position += new Vector3(0, 0.08f, 0);
         foreach (var s in spawnAnimationSprites)
         {
             sr.sprite = s;
             yield return new WaitForSeconds(animFrameDuration);
         }
         sr.sprite = original;
+        transform.localScale = originalScale;
+        transform.position = originalPos;
     }
 
     private void OnMouseDown()
