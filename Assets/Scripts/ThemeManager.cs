@@ -1,5 +1,4 @@
 using UnityEngine;
-using UnityEngine.AddressableAssets;
 
 public enum Theme { Default, Christmas }
 
@@ -14,6 +13,8 @@ public class ThemeManager : MonoBehaviour
 
     [SerializeField] private SpriteRenderer _background;
     [SerializeField] private GameObject _floatingPetal;
+    [SerializeField] private Sprite _christmasBackground;
+    [SerializeField] private Sprite _christmasFloatingPetal;
 
     private Theme _currentTheme = Theme.Default;
     private Sprite _defaultBackground;
@@ -43,22 +44,10 @@ public class ThemeManager : MonoBehaviour
 
     private void SetChristmasTheme()
     {
-        var bgHandle = Addressables.LoadAssetAsync<Sprite>("Assets/Sprites/BackgroundCristmas.jpg");
-        var petalHandle = Addressables.LoadAssetAsync<Sprite>("Assets/Sprites/FloatingPetalChristmas.PNG");
-        bgHandle.Completed += op =>
-        {
-            if (op.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
-                _background.sprite = op.Result;
-        };
-        petalHandle.Completed += op =>
-        {
-            if (op.Status == UnityEngine.ResourceManagement.AsyncOperations.AsyncOperationStatus.Succeeded)
-            {
-                CurrentFloatingPetalSprite = op.Result;
-                _floatingPetal.GetComponent<SpriteRenderer>().sprite = op.Result;
-                UpdateActivePetals();
-            }
-        };
+        _background.sprite = _christmasBackground;
+        CurrentFloatingPetalSprite = _christmasFloatingPetal;
+        _floatingPetal.GetComponent<SpriteRenderer>().sprite = _christmasFloatingPetal;
+        UpdateActivePetals();
         _currentTheme = Theme.Christmas;
     }
 

@@ -3068,7 +3068,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _background: {fileID: 1410693962}
   _floatingPetal: {fileID: 1977113001, guid: bdea4325139274c18903684521a28c9a, type: 3}
-  _spawner: {fileID: 1005614933}
+  _christmasBackground: {fileID: 3829093127820877702, guid: f6bf01f2738a54176801c797ec47ed4a, type: 3}
+  _christmasFloatingPetal: {fileID: -1646277299433242171, guid: 2265d636276b541c1968a84eef26bc11, type: 3}
 --- !u!1 &1410693961
 GameObject:
   m_ObjectHideFlags: 0
