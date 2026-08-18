@@ -9,6 +9,7 @@ public class FloatingPetalPool : MonoBehaviour
     public int defaultCapacity = 15;
 
     private ObjectPool<GameObject> _pool;
+    private int _spawnCycle;
 
     private void Awake()
     {
@@ -41,11 +42,14 @@ public class FloatingPetalPool : MonoBehaviour
             new Vector3(-10.2f, 3.3f, 0f),
             new Vector3(-11.1f, 3.2f, 0f),
             new Vector3(-10.45f, 2.7f, 0f),
-            new Vector3(-11.3f, 2.25f, 0f),
             new Vector3(-11.9f, 2.5f, 0f),
+            new Vector3(-11.3f, 2.25f, 0f),
         };
-        foreach (var pos in positions)
-            Get(pos);
+
+        int count = (_spawnCycle % 2 == 0) ? 5 : 4;
+        for (int i = 0; i < count; i++)
+            Get(positions[i]);
+        _spawnCycle++;
     }
 
     public GameObject Get(Vector3 position)

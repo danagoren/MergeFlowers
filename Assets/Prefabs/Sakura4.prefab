@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 826682986013854880}
   m_Layer: 0
   m_Name: Sakura4
-  m_TagString: Untagged
+  m_TagString: Sakura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: -0.12384103, y: 1.5009598}
-  m_Radius: 5.1792
+  m_Radius: 6.7
 --- !u!114 &826682986013854880
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,6 +142,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   tier: 4
-  slotVerticalOffset: 0.17
+  slotVerticalOffset: 0.2
+  slotHorizontalOffset: -0.02
   spawnAnimationSprites: []
   animFrameDuration: 0.1

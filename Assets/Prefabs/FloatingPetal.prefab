@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 1977113005}
   m_Layer: 0
   m_Name: FloatingPetal
-  m_TagString: Untagged
+  m_TagString: Sakura
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -128,7 +128,7 @@ CircleCollider2D:
   m_CompositeOperation: 0
   m_CompositeOrder: 0
   m_Offset: {x: 0.23926313, y: 0.34413752}
-  m_Radius: 4.660769
+  m_Radius: 5.87
 --- !u!114 &1977113005
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -142,3 +142,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 1.5
+  swaySpeed: 2
+  swayAmount: 0.3

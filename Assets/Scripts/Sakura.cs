@@ -4,6 +4,7 @@ public class Sakura : MonoBehaviour
 {
     public int tier;
     public float slotVerticalOffset;
+    public float slotHorizontalOffset;
     public Sprite[] spawnAnimationSprites;
     public float animFrameDuration = 0.1f;
 
@@ -11,6 +12,12 @@ public class Sakura : MonoBehaviour
     private Vector3 originalPos;
     private int slotX;
     private int slotY;
+    private SpriteRenderer _spriteRenderer;
+
+    private void Awake()
+    {
+        _spriteRenderer = GetComponent<SpriteRenderer>();
+    }
 
     private void Start()
     {
@@ -18,20 +25,25 @@ public class Sakura : MonoBehaviour
             StartCoroutine(PlaySpawnAnimation());
     }
 
+    private void Update()
+    {
+        if (CompareTag("Sakura"))
+            _spriteRenderer.sortingOrder = -(int)(transform.position.y * 100);
+    }
+
     private System.Collections.IEnumerator PlaySpawnAnimation()
     {
-        var sr = GetComponent<SpriteRenderer>();
-        var original = sr.sprite;
+        var original = _spriteRenderer.sprite;
         var originalScale = transform.localScale;
         var originalPos = transform.position;
         transform.localScale = new Vector3(0.22f, 0.22f, 1f);
         transform.position += new Vector3(0, 0.08f, 0);
         foreach (var s in spawnAnimationSprites)
         {
-            sr.sprite = s;
+            _spriteRenderer.sprite = s;
             yield return new WaitForSeconds(animFrameDuration);
         }
-        sr.sprite = original;
+        _spriteRenderer.sprite = original;
         transform.localScale = originalScale;
         transform.position = originalPos;
     }
@@ -80,6 +92,7 @@ public class Sakura : MonoBehaviour
         {
             Vector2 pos = GridManager.Instance.GetCellPosition(cell.x, cell.y);
             pos.y += slotVerticalOffset;
+            pos.x += slotHorizontalOffset;
             transform.position = new Vector3(pos.x, pos.y, 0);
             slotX = cell.x;
             slotY = cell.y;
@@ -101,6 +114,7 @@ public class Sakura : MonoBehaviour
         GameObject nextPrefab = Spawner.Instance.sakuraPrefabs[tier + 1];
         Vector3 pos = GridManager.Instance.GetCellPosition(targetCell.x, targetCell.y);
         pos.y += nextPrefab.GetComponent<Sakura>().slotVerticalOffset;
+        pos.x += nextPrefab.GetComponent<Sakura>().slotHorizontalOffset;
         GameObject newSakura = Instantiate(nextPrefab, new Vector3(pos.x, pos.y, 0), Quaternion.identity);
         newSakura.name = $"Sakura_{targetCell.x}_{targetCell.y}";
 
