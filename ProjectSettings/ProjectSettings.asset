@@ -14,7 +14,7 @@ PlayerSettings:
   accelerometerFrequency: 60
   companyName: DefaultCompany
   productName: MergeFlowers
-  defaultCursor: {fileID: 2800000, guid: 3221b3b7bdfa64bf2b2aad38fc507def, type: 3}
+  defaultCursor: {fileID: 2800000, guid: 580914e93a85f45a6aeeab78c3163bba, type: 3}
   cursorHotspot: {x: 0, y: 0}
   m_SplashScreenBackgroundColor: {r: 0.13725491, g: 0.12156863, b: 0.1254902, a: 1}
   m_ShowUnitySplashScreen: 1

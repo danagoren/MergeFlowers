@@ -1,19 +1,22 @@
 fileFormatVersion: 2
-guid: 580914e93a85f45a6aeeab78c3163bba
+guid: 03edd0748eab943e898ce2e0b445187b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -275036958122581583
-    second: C0197A8F-2029-47D5-A1FA-26626ACE22AA_0
+      213: -2586865723994835497
+    second: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_0
   - first:
-      213: -8044626717605399029
-    second: C0197A8F-2029-47D5-A1FA-26626ACE22AA_1
+      213: -6090595867677064192
+    second: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_1
   - first:
-      213: -65742617718329024
-    second: C0197A8F-2029-47D5-A1FA-26626ACE22AA_2
+      213: 7798971528012110462
+    second: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_2
   - first:
-      213: -5881991462158339021
-    second: C0197A8F-2029-47D5-A1FA-26626ACE22AA_3
+      213: -3200548092877115910
+    second: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_3
+  - first:
+      213: -2139138446300810223
+    second: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_4
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -33,7 +36,7 @@ TextureImporter:
     heightScale: 0.25
     normalMapFilter: 0
     flipGreenChannel: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   vTOnly: 0
@@ -55,9 +58,9 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 1
+  spriteMeshType: 0
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
   spritePixelsToUnits: 100
@@ -66,7 +69,7 @@ TextureImporter:
   alphaUsage: 1
   alphaIsTransparency: 1
   spriteTessellationDetail: -1
-  textureType: 7
+  textureType: 8
   textureShape: 1
   singleChannelComponent: 0
   flipbookRows: 1
@@ -81,7 +84,7 @@ TextureImporter:
   platformSettings:
   - serializedVersion: 4
     buildTarget: DefaultTexturePlatform
-    maxTextureSize: 32
+    maxTextureSize: 2048
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 1
@@ -122,13 +125,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: C0197A8F-2029-47D5-A1FA-26626ACE22AA_0
+      name: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_0
       rect:
         serializedVersion: 2
-        x: 88
-        y: 104
-        width: 1171
-        height: 1073
+        x: 0
+        y: 533
+        width: 27
+        height: 24
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -137,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 1b1eff2085fde2cf0800000000000000
-      internalID: -275036958122581583
+      spriteID: 7d577af645b991cd0800000000000000
+      internalID: -2586865723994835497
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C0197A8F-2029-47D5-A1FA-26626ACE22AA_1
+      name: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_1
       rect:
         serializedVersion: 2
-        x: 471
-        y: 1136
-        width: 13
-        height: 17
+        x: 2
+        y: 2
+        width: 523
+        height: 561
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -159,20 +162,42 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: b0673826f9ebb5090800000000000000
-      internalID: -8044626717605399029
+      spriteID: 00485a4e35bd97ba0800000000000000
+      internalID: -6090595867677064192
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C0197A8F-2029-47D5-A1FA-26626ACE22AA_2
+      name: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_2
       rect:
         serializedVersion: 2
-        x: 457
-        y: 1125
+        x: 412
+        y: 534
+        width: 59
+        height: 36
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      customData: 
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e7a1c84b8438b3c60800000000000000
+      internalID: 7798971528012110462
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_3
+      rect:
+        serializedVersion: 2
+        x: 516
+        y: 400
         width: 7
-        height: 9
+        height: 12
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -181,20 +206,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 0417b40007f661ff0800000000000000
-      internalID: -65742617718329024
+      spriteID: afd618d777e5593d0800000000000000
+      internalID: -3200548092877115910
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: C0197A8F-2029-47D5-A1FA-26626ACE22AA_3
+      name: ED846910-8CE7-4B0C-BAAE-67689AEF2A52_4
       rect:
         serializedVersion: 2
-        x: 921
-        y: 136
-        width: 28
-        height: 10
+        x: 518
+        y: 150
+        width: 7
+        height: 15
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -203,8 +228,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 334fb26ede7fe5ea0800000000000000
-      internalID: -5881991462158339021
+      spriteID: 114fbdeaae04052e0800000000000000
+      internalID: -2139138446300810223
       vertices: []
       indices: 
       edges: []
@@ -213,7 +238,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 5e97eb03825dee720800000000000000
     internalID: 0
     vertices: []
     indices: 
@@ -223,10 +248,11 @@ TextureImporter:
     spriteCustomMetadata:
       entries: []
     nameFileIdTable:
-      C0197A8F-2029-47D5-A1FA-26626ACE22AA_0: -275036958122581583
-      C0197A8F-2029-47D5-A1FA-26626ACE22AA_1: -8044626717605399029
-      C0197A8F-2029-47D5-A1FA-26626ACE22AA_2: -65742617718329024
-      C0197A8F-2029-47D5-A1FA-26626ACE22AA_3: -5881991462158339021
+      ED846910-8CE7-4B0C-BAAE-67689AEF2A52_0: -2586865723994835497
+      ED846910-8CE7-4B0C-BAAE-67689AEF2A52_1: -6090595867677064192
+      ED846910-8CE7-4B0C-BAAE-67689AEF2A52_2: 7798971528012110462
+      ED846910-8CE7-4B0C-BAAE-67689AEF2A52_3: -3200548092877115910
+      ED846910-8CE7-4B0C-BAAE-67689AEF2A52_4: -2139138446300810223
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

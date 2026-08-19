@@ -47,6 +47,8 @@ public class FloatingPetalPool : MonoBehaviour
         };
 
         int count = (_spawnCycle % 2 == 0) ? 5 : 4;
+        if (count == 4)
+            positions[3] = new Vector3(-11.4f, 2.57f, 0f);
         for (int i = 0; i < count; i++)
             Get(positions[i]);
         _spawnCycle++;

@@ -21,7 +21,7 @@ public class FloatingPetal : MonoBehaviour
 
     private void Update()
     {
-        float sway = Mathf.Sin(Time.time * swaySpeed + swayOffset) * swayAmount;
+        float sway = (0.8f)*Mathf.Sin(Time.time * swaySpeed + swayOffset) * swayAmount;
         transform.position += (Vector3.right * speed + Vector3.up * sway) * Time.deltaTime;
 
         Vector2 velocity = new Vector2(speed, sway);

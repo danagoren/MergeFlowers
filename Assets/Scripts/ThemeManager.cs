@@ -13,6 +13,8 @@ public class ThemeManager : MonoBehaviour
 
     [SerializeField] private SpriteRenderer _background;
     [SerializeField] private GameObject _floatingPetal;
+    [SerializeField] private GameObject _petalParticles;
+    [SerializeField] private GameObject _snowParticles;
     [SerializeField] private Sprite _christmasBackground;
     [SerializeField] private Sprite _christmasFloatingPetal;
 
@@ -27,6 +29,8 @@ public class ThemeManager : MonoBehaviour
         _defaultBackground = _background.sprite;
         _defaultFloatingPetal = _floatingPetal.GetComponent<SpriteRenderer>().sprite;
         CurrentFloatingPetalSprite = _defaultFloatingPetal;
+        _petalParticles.SetActive(true);
+        _snowParticles.SetActive(false);
     }
 
     public void ToggleTheme()
@@ -48,6 +52,8 @@ public class ThemeManager : MonoBehaviour
         CurrentFloatingPetalSprite = _christmasFloatingPetal;
         _floatingPetal.GetComponent<SpriteRenderer>().sprite = _christmasFloatingPetal;
         UpdateActivePetals();
+        _petalParticles.SetActive(false);
+        _snowParticles.SetActive(true);
         _currentTheme = Theme.Christmas;
     }
 
@@ -57,6 +63,8 @@ public class ThemeManager : MonoBehaviour
         CurrentFloatingPetalSprite = _defaultFloatingPetal;
         _floatingPetal.GetComponent<SpriteRenderer>().sprite = _defaultFloatingPetal;
         UpdateActivePetals();
+        _petalParticles.SetActive(true);
+        _snowParticles.SetActive(false);
         _currentTheme = Theme.Default;
     }
 
